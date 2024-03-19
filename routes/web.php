@@ -16,7 +16,7 @@ use App\Http\Controllers\Website\WebsiteController;
 */
 
 // Login
-Route::get('/login', [AuthController::class, 'login_view'])->name('login');
+Route::get('/', [AuthController::class, 'login_view'])->name('login');
 Route::post('/login-submit', [AuthController::class, 'login_submit'])->name('login_submit');
 
 // Register
